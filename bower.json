@@ -1,0 +1,19 @@
+{
+    "name": "BlogApp",
+    "version": "0.0.0",
+    "authors": [
+        "Snehal Bhayani"
+    ],
+    "description": "Few Experimental components",
+    "main": "index.html",
+    "license": "MIT",
+    "dependencies": {
+        "ng-idle": "~1.1.1",
+        "angular-bootstrap": "~1.2.5",
+        "angular": "~1.4.7",
+        "bootstrap": "~3.3.5",
+        "angular-cookies": "~1.4.7",
+        "angular-ui-router": "~0.2.15",
+        "ui-router-extras": "^0.1.0"
+    }
+}
