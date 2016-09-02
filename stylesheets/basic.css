@@ -1,0 +1,108 @@
+/*TEXT SIZES*/
+.txt-xxs {
+    font-size: 11px;
+}
+
+.txt-xs {
+    font-size: 12px;
+}
+
+.txt-sm {
+    font-size: 13px;
+}
+
+.txt-md {
+    font-size: 14px;
+}
+
+.txt-mlg {
+    font-size: 16px;
+}
+
+.txt-lg {
+    font-size: 18px;
+}
+
+.txt-xl {
+    font-size: 24px;
+}
+
+.txt-xxl {
+    font-size: 32px;
+}
+
+/*TEXT SIZE WITH WIEGHTS*/
+.semibold-txt-xs {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.semibold-txt-sm {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.semibold-txt-md {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.semibold-txt-mlg {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.semibold-txt-lg {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.semibold-txt-xl {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.semibold-txt-xxl {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.title-sm {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.title-md {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.title-mlg {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title-lg {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-xl {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title-xxl {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title-mxxl {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.title-xxxl {
+    font-size: 48px;
+    font-weight: bold;
+}

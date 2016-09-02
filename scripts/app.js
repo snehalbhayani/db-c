@@ -1,6 +1,5 @@
 var TheApp = angular.module('theApp', [
-    'ui.router',
-    'ui.bootstrap'
+    'ui.router'
 ]);
 
 TheApp.controller("Home", function(
@@ -10,4 +9,5 @@ TheApp.controller("Home", function(
     $state
 ) {
     $log.debug('In the Home');
+    $scope.state = $state.$current.name;
 });

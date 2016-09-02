@@ -7,10 +7,10 @@ TheApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $locat
 
     $stateProvider.state("app", {
         url: "/",
-        templateUrl: "/templates/app.html",
+        templateUrl: "templates/app.html",
         abstract: true
     });
-
+    $stateProvider.state("app.home", {});
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
@@ -19,9 +19,11 @@ TheApp.config(function($httpProvider, $stateProvider, $urlRouterProvider, $locat
 
 TheApp.run(function(
     $rootScope,
-    $state
+    $state,
+    $log
 ) {
     $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
-        console.log($state);
+        $log.debug("changing");
     });
+    $state.go("app.home");
 });

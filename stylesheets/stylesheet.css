@@ -4,6 +4,8 @@
 html {
     background-image: url(../static/paper/paper_2x.png);
     background-repeat: repeat;
+    height: 100%;
+    background-color : transparent;
 }
 
 body {
@@ -13,6 +15,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #606c71;
+    height: 100%;
+    background-color : transparent !important;
 }
 
 a {
@@ -229,23 +233,30 @@ a:hover {
 .site-footer {
     padding-top: 2rem;
     margin-top: 2rem;
-    border-top: solid 1px #eff0f1; }
+    border-top: solid 1px #eff0f1;
+}
 
 .site-footer-owner {
     display: block;
-    font-weight: bold; }
+    font-weight: bold;
+}
 
 .site-footer-credits {
-    color: #819198; }
+    color: #819198;
+}
+
 
 @media screen and (min-width: 64em) {
     .site-footer {
-        font-size: 1rem; } }
+        font-size: 1rem; }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .site-footer {
-        font-size: 1rem; } }
+        font-size: 1rem; }
+}
 
 @media screen and (max-width: 42em) {
     .site-footer {
-    font-size: 0.9rem; } }
+        font-size: 0.9rem; }
+}
