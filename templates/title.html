@@ -12,13 +12,13 @@
                 </span>
             </div>
         </div>
-        <div class="txt-md title-footer">
+        <div class="txt-md title-footer" ng-click="viewContent();">
             <span>
                 Browse Through My Mind
             </span>
         </div>
     </div>
-    <div class="" id="content_section">
+    <div class="" id="content_section" scrollable-element="ContentViewRequested">
         <div class="content-sub-section">
             <div ng-include="'/templates/content.html'"/>
         </div>
