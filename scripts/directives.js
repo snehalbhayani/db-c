@@ -14,22 +14,25 @@ TheApp.directive('scrollableElement', function(){
     };
 });
 
-TheApp.directive('contentRow', function(){
+TheApp.directive('contentRow', function($rootScope){
     return {
         restrict: 'C',
-        scope: false,
+        scope: true,
         link: function(scope, element, attrs) {
             var button = $(element).children(".content-footer"),
                 content = $(element).children(".content-bulk");
+            scope.collapsed = true;
             $(button).on("click", function() {
-                scope.$broadcast("collapseAll", element);
-                content.removeClass("content-truncated");
-                content.addClass("content");
+                scope.$emit("collapseAll", element);
+                scope.$apply(function() {
+                    scope.collapsed = !scope.collapsed;
+                });
             });
-            scope.$on("collapseAll", function(event, ele) {
+            $rootScope.$on("collapseAll", function(event, ele) {
                 if(ele !== element) {
-                    content.addClass("content-truncated");
-                    content.removeClass("content");
+                    scope.$apply(function() {
+                        scope.collapsed = true;
+                    });
                 }
             });
         }
